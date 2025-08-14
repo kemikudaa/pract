@@ -1,9 +1,10 @@
-body{
+body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.div1{
+.div1 {
     position: absolute;
     width: 177px;
     height: 603px;
@@ -14,10 +15,9 @@ body{
     justify-content: baseline;
     align-items: center;
     flex-direction: column;
-    
 }
 
-.div2{
+.div2 {
     position: absolute;
     width: 795px;
     height: 603px;
@@ -30,35 +30,82 @@ body{
     flex-direction: column;
 }
 
-.rect1{
+.rect1 {
     width: 136px;
     height: 128px;
     background-color: rgba(0, 41, 255, 1);
     margin: 36px;
 }
 
-.rect2{
+.rect2 {
     width: 136px;
     height: 30px;
     background-color: rgba(0, 41, 255, 1);
     margin: 10px;
 }
 
-.rect01, .rect02, .rect03{
+.rect01, .rect02, .rect03 {
     width: 723px;
     height: 128px;
     background-color: rgba(0, 41, 255, 1);
     margin: 36px;
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.rect3{
+.rect3 {
     width: 110px;
     height: 94px;
     background-color: rgba(255, 255, 255, 1);
     margin: 15px;
-    
+}
+@media screen and (max-width: 768px) {
+    .div1, .div2 {
+        position: relative;
+        width: 60vw; 
+        height: auto; 
+        left: 0;
+        top: 0;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .div2 {
+        margin-top: 5vh;
+    }
+
+    .rect1{
+        width: 80%;
+        max-width: 400px;
+        height: 100%;
+        max-height: 200px;
+        min-height: 100px;
+        margin: 2vh auto;
+    }
+
+    .rect2 {
+        width: 80%;
+        max-width: 400px;
+        height: 20%;
+        max-height: 100px;
+        min-height: 30px;
+        margin: 2vh auto;
+    }
+    .rect01, .rect02, .rect03 {
+        width: 50%;
+        height: auto;
+        min-height: 100px;
+        flex-direction: column; 
+        padding: 2vh;
+        margin: 2vh auto;
+    }
+
+    .rect3 {
+        width: 80%;
+        max-width: 100px;
+        height: 80px;
+        margin: 1vh auto;
+    }
 }

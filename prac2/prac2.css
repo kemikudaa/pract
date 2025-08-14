@@ -1,7 +1,13 @@
 body{
     margin: 0;
     padding: 0;
+}
+
+.frame0{
+    position: absolute;
     background-color: rgba(60, 62, 68, 1);
+    width: 1152px;
+    height: 700px;
 }
 .frame1{
     position: relative;
