@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(60, 62, 68, 1);
+}
+.frame1{
+    position: relative;
+    background-color: rgba(0, 0, 0, 1);
+    width: 150px;
+    height: 700px;
+    opacity: 20%;
+}
