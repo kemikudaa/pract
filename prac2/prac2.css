@@ -1,18 +1,20 @@
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100vh;
 }
 
 .container{
-    width: 1152px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
     background-color: #3C3E44;
     display: flex;
 }
 .frame1{
     background-color: rgba(0, 0, 0, 0.2);
     width: 150px;
-    height: 700px;
+    height: 100vh;
 }
 
 .frame01{
@@ -87,7 +89,6 @@ body{
     height: 135px;
 }
 .txt2{
-    width: 159px;
     height: 15px;
     font-family: 'Montserrat';
     font-size: 12px;
@@ -153,7 +154,6 @@ body{
 }
 
 .txt_2, .txt_2a, .txt_2b{
-    width: 28px;
     height: 59px;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -169,3 +169,100 @@ body{
      color: rgba(255, 255, 255, 0.8);
 }
 
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto; 
+        justify-content:space-evenly;
+        align-items: center;
+    }
+
+    .frame1 {
+        width: 100%; 
+        height: auto; 
+        min-height: 400px; 
+    }
+
+    .frame01 {
+        width: 100%;
+        height: auto;
+    }
+
+    .fr001 {
+        width: 100%;
+        height: 120px;
+    }
+
+    .fr001 svg {
+        width: 60px;
+        height: 80px;
+    }
+
+    .fr002 {
+        width: 100%;
+        height: auto;
+    }
+
+    .class1, .class2, .class3, .class4, .class5 {
+        width: 100%;
+        height: 50px;
+    }
+
+    .frame2 {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .frame02 {
+        margin-top: 10px;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .frame21, .frame22, .frame23 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .rect1 {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap; 
+        gap: 10px;
+        max-width: 340px;
+    }
+    .txt_2, .txt_2a, .txt_2b{
+        font-size: 30px;
+        align-self: center;
+        margin: 0;
+    }
+
+    .rect12 {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .rect2, .rect3, .rect4, .rect5 {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
+    .rect6, .rect7, .rect8 {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
+}
